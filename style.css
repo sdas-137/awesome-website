@@ -5,8 +5,12 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-a, .hero-secondary, .call-secondary, .footer {
-    color: #e5e7eb;
+.logo, .hero-main, button, .call-box {
+    color: #f9faf8;
+}
+
+a, .hero-secondary, .footer, .hero-logo {
+    color: #c5c7cb;
 }
 
 .info-box, .quote{
@@ -17,13 +21,21 @@ a, .hero-secondary, .call-secondary, .footer {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
-    padding: 0px 20px;
+    padding: 0px 100px;
 }
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 12px;
+    gap: 24px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
 }
 
 ul {
@@ -31,19 +43,58 @@ ul {
     padding: 0px;
     margin: 0px;
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-a {
+li a {
     text-decoration: none;
 }
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0px 100px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-section {
+    width: 400px;
+    flex: 1;
+}
+
+.hero-main {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+button {
+    background-color: #3882f6;
+    border: 0px;
+    border-radius: 4px;
+    padding: 4px 24px;
+    font-weight: bold;
+    flex-shrink: 1;
+}
+
+.sign-up-button-1 {
+    margin-top: 16px;
 }
 
 .hero-logo {
-    background-color: #d5d7db;
+    background-color: #75777b;
+    flex-basis: 360px;
+    flex-grow: 1;
+    max-width: 360px;
+    aspect-ratio: 2 / 1;
+}
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 .info-section {
@@ -68,18 +119,19 @@ a {
 .info-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100px;
+    width: 124px;
 }
 
 .image-container {
     border: 2px solid blue;
     border-radius: 8px;
-    height: 100px;
 }
 
-img {
+.info-img {
     border-radius: 8px;
+    height: 120px;
+    width: 120px;
+    display: block;
 }
 
 .subtext {
@@ -113,13 +165,18 @@ img {
     border-radius: 4px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 60px;
+    gap: 20px;
 }
 
 .call-main {
     font-size: 24px;
-    color: #f9faf8;
+}
+
+.sign-up-button-2 {
+    border: 2px solid #f9faf8;
 }
 
 .footer {
